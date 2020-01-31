@@ -11,6 +11,8 @@ namespace RedisChecker
                 Console.WriteLine("Please enter the connection string:");
                 var connectionString = Console.ReadLine();
 
+                var redisService = new RedisService(connectionString);
+                redisService.Test();
             }
             catch (Exception ex)
             {
