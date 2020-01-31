@@ -22,6 +22,12 @@
 
                 Console.WriteLine("Reading the \"test\" key...");
                 Console.WriteLine(database.StringGet("test"));
+                Console.WriteLine();
+
+                Console.WriteLine("Removing the \"test\" key...");
+                Console.WriteLine(database.KeyDelete("test"));
+                Console.WriteLine();
+
                 Console.WriteLine("Done!");
             }
         }
